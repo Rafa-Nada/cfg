@@ -3,14 +3,6 @@ variable "location" {
   default = "East US"
 }
 
-variable "resource_group_name" {
-  type = string
-}
-
-variable "subscription_id" {
-  type = string
-}
-
 variable "appgw_name" {
   type    = string
   default = "example-appgw"
