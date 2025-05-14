@@ -13,10 +13,6 @@ resource "azurerm_storage_account" "example" {
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location
   account_kind             = "StorageV2" # Or "BlobStorage", "FileStorage", etc.
+  account_tier             = "standard"
   account_replication_type = "LRS"  # Or "GRS", "ZRS", etc.
-  # Optional: Enable static website hosting
-
-  enable_http_logging = true
-  # Optional: Enable large file support
-  enable_large_file_support = true
-}
+  
