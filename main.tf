@@ -15,4 +15,4 @@ resource "azurerm_storage_account" "example" {
   account_kind             = "StorageV2" # Or "BlobStorage", "FileStorage", etc.
   account_tier             = "standard"
   account_replication_type = "LRS"  # Or "GRS", "ZRS", etc.
-  
+  }
